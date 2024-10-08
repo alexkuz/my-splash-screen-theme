@@ -23,11 +23,9 @@ quit_on_esc() {
 run_plymouth() {
 	sudo plymouthd --debug --kernel-command-line="splash video=${WIDTH}x${HEIGHT}"
 	sudo plymouth show-splash --debug
-	sudo plymouth display-message --text="test message"
-	sleep 5
-	sudo plymouth display-message --text="test message test message test message test message test message test message test message test message"
-	sleep 5
-	sudo plymouth ask-for-password --prompt="test prompt"
+	sudo plymouth display-message --text="Press Esc to quit preview"
+	sleep 2
+	sudo plymouth ask-for-password --prompt="Enter password (Press Esc to quit preview)"
 	sleep 2
 	sudo plymouth quit
 }
