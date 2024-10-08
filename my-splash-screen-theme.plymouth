@@ -1,7 +1,11 @@
 [Plymouth Theme]
 Name=My Theme
 Description=Plymouth theme adapted for Framework laptop
-ModuleName=two-step
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/my-splash-screen-theme
+ScriptFile=/usr/share/plymouth/themes/my-splash-screen-theme/my-splash-screen-theme.script
 
 [two-step]
 Font=Open Sans 16
